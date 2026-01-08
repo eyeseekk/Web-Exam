@@ -1,0 +1,228 @@
+/* Основные стили */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Шапка */
+.navbar-brand img { 
+    border-radius: 50%; 
+}
+
+.navbar-brand i {
+    font-size: 1.8rem;
+}
+
+/* Активная навигация */
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Герой секция */
+.hero { 
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+/* Карточки курсов */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.1) !important;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Таблицы */
+.table-hover tbody tr:hover { 
+    background-color: rgba(13, 110, 253, 0.05); 
+}
+
+.table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Иконки в таблице */
+.table td .btn-group .btn {
+    padding: 0.25rem 0.5rem;
+}
+
+/* Карта */
+#map {
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Футер */
+footer { 
+    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+    text-decoration: underline;
+}
+
+/* Уведомления */
+#notificationArea {
+    z-index: 2000;
+}
+
+.toast {
+    min-width: 300px;
+    max-width: 400px;
+}
+
+/* Модальные окна */
+.modal-header.bg-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+}
+
+.modal-header.bg-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+}
+
+.modal-header.bg-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+/* Пагинация */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Бейджи */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+}
+
+/* Формы */
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+    
+    .toast {
+        min-width: 250px;
+        max-width: 300px;
+    }
+    
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    #searchForm {
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+}
+
+/* Утилиты */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Спиннеры */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Кнопка формы заказа */
+.btn-order-form {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-order-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(40, 167, 69, 0.4);
+    color: white !important;
+}
+
+/* Кастомные стили для кабинета */
+.header {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: white;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 1.5rem 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.pagination-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.card.border-3 {
+    transform: scale(1.02);
+    z-index: 1;
+}
