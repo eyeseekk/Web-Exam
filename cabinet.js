@@ -1,7 +1,6 @@
 // cabinet.js — Полный функционал личного кабинета
 
 const API_KEY = 'cb5b3b0c-7518-4730-86c3-79454ef67a44';
-// const BASE_URL = 'http://exam-api-courses.std-900.ist.mospolytech.ru/api';
 const BASE_URL = 'https://corsproxy.io/?' + 
   encodeURIComponent('http://exam-api-courses.std-900.ist.mospolytech.ru/api');
 const ITEMS_PER_PAGE = 5;
